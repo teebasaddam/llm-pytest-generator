@@ -25,7 +25,7 @@ python -m pytest test_generated.py -v
 - The generated tests are not manually reviewed — occasional edge cases 
   (e.g. non-numeric input types) may need adjustment.
 - Currently tested only on simple, single-file Python modules.
-- - Two distinct failure types were observed during testing: (1) mechanical 
+-  Two distinct failure types were observed during testing: (1) mechanical 
   errors, such as a missing `import pytest` statement, and (2) logical 
   errors, where the model assumed the source code should reject inputs 
   (e.g. floats) that it never actually rejects. This distinction motivated 
